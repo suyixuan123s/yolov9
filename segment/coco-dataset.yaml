@@ -1,0 +1,63 @@
+path: ../datasets/coco  # dataset root dir
+train: E:/ABB/AI/yolov9/segment/data/txt/train.txt  # train images (relative to 'path') 118287 images
+val: EE:/ABB/AI/yolov9/segment/data/txt/val.txt  # val images (relative to 'path') 5000 images
+test: E:/ABB/AI/yolov9/segment/data/txt/test.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+names:
+  0: blood_tube
+  1: 5ML_centrifuge_tube
+  2: 10ML_centrifuge_tube
+  3: 5ML_sorting_tube_rack
+  4: 10ML_sorting_tube_rack
+  5: centrifuge_open
+  6: centrifuge_close
+  7: refrigerator_open
+  8: refrigerator_close
+  9: operating_desktop
+  10: tobe_sorted_tube_rack
+  11: dispensing_tube_rack
+  12: sorting_tube_rack_base
+  13: tube_rack_storage_cabinet
+
+
+
+#
+#1、试管标签分类
+#  （1）  长试管：long_tube
+#  （2）  短试管：short_tube
+#  （3）  离心管：centrifuge_tube
+#  （4）  塑料管：plastic_tube
+#  （5）  微量杯：trace_cup
+#  （6）  红帽：red_cap
+#  （7）  橙帽：orange_cap
+#  （8）  黄帽：yellow_cap
+#  （9）  绿帽：green_cap
+#  （10）紫帽：purple_cap
+#  （11）条码：barcode
+#  （12）液体：liquid
+#
+#2、标注工具
+#    labelimg
+#    格式：PascolVOC（.xml）
+
+
+
+
+# Download script/URL (optional)
+download: |
+  from utils.general import download, Path
+
+
+  # Download labels
+  #segments = True  # segment or box labels
+  #dir = Path(yaml['path'])  # dataset root dir
+  #url = 'https://github.com/WongKinYiu/yolov7/releases/download/v0.1/'
+  #urls = [url + ('coco2017labels-segments.zip' if segments else 'coco2017labels.zip')]  # labels
+  #download(urls, dir=dir.parent)
+
+  # Download data
+  #urls = ['http://images.cocodataset.org/zips/train2017.zip',  # 19G, 118k images
+  #        'http://images.cocodataset.org/zips/val2017.zip',  # 1G, 5k images
+  #        'http://images.cocodataset.org/zips/test2017.zip']  # 7G, 41k images (optional)
+  #download(urls, dir=dir / 'images', threads=3)

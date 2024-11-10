@@ -1,0 +1,70 @@
+.nfs*
+
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.pyd
+*.so
+*.dll
+*.egg-info/
+build/
+dist/
+wheels/
+
+# pytorch/python/numpy formats
+*.pth
+*.pkl
+*.npy
+*.ts
+model_ts*.txt
+
+# onnx models
+*.onnx
+*.xml
+*.ply
+# ipython/jupyter notebooks
+**/.ipynb_checkpoints/
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# editor settings
+.idea
+.vscode
+_darcs
+
+# demo
+**/node_modules
+yarn.lock
+package-lock.json
+
+*.pt
+*.pth
+
+
+# data
+data/
+data_test_2024_10_21/
+dataset/
+datasets/
+
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+
+
+
+
