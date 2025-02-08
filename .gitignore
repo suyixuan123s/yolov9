@@ -47,10 +47,10 @@ package-lock.json
 
 
 # data
-data/
-Dataset_set/data_test_2024_10_21/
-Dataset_set/dataset/
-Dataset_set/datasets/
+#data/
+#Dataset_set/data_test_2024_10_21/
+#Dataset_set/dataset/
+#Dataset_set/datasets/
 
 
 
