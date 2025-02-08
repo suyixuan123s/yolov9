@@ -1,6 +1,5 @@
 import time
 import cv2
-import torch
 import numpy as np
 import pyrealsense2 as rs
 import YOLOv5_W_detectAPI

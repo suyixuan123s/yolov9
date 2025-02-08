@@ -144,8 +144,8 @@ def test_yolo(device='0'):
     detect_api = DetectAPI(weights='E:/ABB/AI/yolov9/runs/train/exp19/weights/best.pt', imgsz=640, device=device,
                            csv_path='detection_results.csv')
     # 使用实际存在的图片路径
-    img_list = [cv2.imread('E:/ABB/AI/yolov9/data/Realsence_Data/00000.jpg'),
-                cv2.imread('E:/ABB/AI/yolov9/data/Realsence_Data/00001.jpg')]
+    img_list = [cv2.imread('/data/Realsence_Data/00000.jpg'),
+                cv2.imread('/data/Realsence_Data/00001.jpg')]
     detect_api.detect(img_list)
 
 

@@ -2,12 +2,12 @@ import os
 import cv2
 import numpy as np
 import pyrealsense2 as rs
-from Test.YOLOv9_Detect_API import DetectAPI  # 假设你已经定义了YOLOv9的API
-from Test.YOLOv9_Intel_Realsence_Test_copy2 import class_names
+from suyixuan.Test.YOLOv9_Detect_API import DetectAPI  # 假设你已经定义了YOLOv9的API
+from suyixuan.Test.YOLOv9_Intel_Realsence_Test_copy2 import class_names
 
 # 创建保存目录
-save_path = r"E:\ABB\AI\yolov9\Camera\data"
-detect_save_path = r"E:\ABB\AI\yolov9\Camera\data\detect"
+save_path = r"/suyixuan/Camera/data"
+detect_save_path = r"/suyixuan/Camera/data/detect"
 os.makedirs(save_path, exist_ok=True)
 os.makedirs(detect_save_path, exist_ok=True)
 

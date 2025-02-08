@@ -4,7 +4,7 @@ import cv2
 import os
 
 # 确保保存路径存在
-save_path = r"E:\ABB\AI\yolov9\Camera\data"
+save_path = r"/suyixuan/Camera/data"
 if not os.path.exists(save_path):
     os.makedirs(save_path)
 

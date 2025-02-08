@@ -49,7 +49,7 @@ def get_3d_camera_coordinate(depth_pixel, alighed_depth_frame, depth_intrin):
 
 if __name__== '__main__':
     # 加载 YOLOv9 模型
-    model = YOLOv9_Detect_API.DetectAPI(weights = 'E:/ABB/AI/yolov9/runs/train/exp19/weights/best.pt')
+    model = YOLOv9_Detect_API.DetectAPI(weights ='E:/ABB/AI/yolov9/runs/train/exp19/weights/best.pt')
 
     # 设置计时器
     start_time = time.time()

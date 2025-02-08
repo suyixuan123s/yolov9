@@ -6,7 +6,7 @@ import pyrealsense2 as rs
 from ultralytics import YOLO  # 将YOLOv8导入到该py文件中
 
 # 加载官方或自定义模型
-model = YOLO(r"E:\ABB\AI\yolov9\runs\train\exp19\weights\best.pt")  # 加载一个官方的检测模型
+model = YOLO(r"/runs/train/exp19/weights/best.pt")  # 加载一个官方的检测模型
 # model = YOLO(r"E:\Deep learning\YOLOv8\yolov8s.pt")  # 加载一个官方的检测模型
 # model = YOLO(r"E:\Deep learning\YOLOv8\yolov8n-seg.pt")  # 加载一个官方的分割模型
 # model = YOLO(r"E:\Deep learning\YOLOv8\yolov8n-pose.pt")  # 加载一个官方的姿态模型

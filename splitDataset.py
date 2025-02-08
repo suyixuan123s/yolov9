@@ -7,8 +7,6 @@ xmlfilepath = 'E:/ABB/AI/yolov9/data/labels'
 txtsavepath = 'data/ImageSets'
 total_xml = os.listdir(xmlfilepath)
 
-
-
 num = len(total_xml)
 list = range(num)
 tv = int(num * trainval_percent)
@@ -39,16 +37,12 @@ for i in list:
     # name_1 = 'E:/aimodelspaces/yolov7/data/images/' + total_xml[i][:-4] + '.jpg'
     # name_2 = 'E:/aimodelspaces/yolov7/data/images/' + total_xml[i][:-4] + '.txt'
 
-
-
     # if i in trainval:
     #
     #     ftest.write(name)
     #
     # else:
     #     ftrain.write(name)
-
-
 
 ftrainval.close()
 ftrain.close()
